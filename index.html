@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ksenia Smith | Full Stack Web Developer</title>
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<div id="container">
+
+<!-- ///////////////////HEADER/////////////////////// -->
+  <div id="header-fixed" class="navbar">
+    <div id="nav-left">
+      <h1>Ksenia Smith</h1>
+      <h3 id="mytitle">full stack web developer</h3>
+    </div>
+    <div id="nav-right">
+      <h3 id="rightnav"><a href="#content-box">about</a> | <a href="#projectsheader">projects</a> | <a href="#contactheader">contact</a></h3>
+    </div>
+  </div> <!-- header-fixed END -->
+
+<!-- ///////////////////CONTENT//////////////////////// -->
+  <div id="content-box" class="pure-u-1">
+    <h2>about me:</h2>
+    <div id="about" class="pure-g">
+      <div class="pure-u-1 pure-u-md-1-3"><img id="mypic" class="pure-img" src="images/my_pic.png"></div>
+      <div class="pure-u-1 pure-u-md-2-3"><p class="bio">Hi! I'm Ksenia,<br />I live and code in Los Angeles, California. 
+      When not occupied with coding, I like to read, cook, swim, make jewelry, drink coffee, take pictures, refinish furniture, hang out with friends, and visit new places. My background is in fine arts and linguistics, which somehow lends me a hand in programming. If you have questions for me or would like to reach out with collaboration ideas, please send me a message below.</p></div>
+    </div> <!-- about END -->
+    <hr id="projectsheader">
+
+    <h2>my projects:</h2>
+    <div id="projects" class="pure-g">
+      <div id="converge" class="pure-u-1 pure-u-lg-1-2 imgbox">
+        <h3>Converge</h3>
+        <img src="images/converge.png" class="pure-img preview">
+        <div class="description"><p>Converge app calculates an ideal meeting spot for a few friends traveling from different locations.</p></div>
+        <div class="imgbutton"><a href="http://converge-us.herokuapp.com/">launch</a></div>
+      </div>
+
+      <div id="gr8date" class="pure-u-1 pure-u-lg-1-2 imgbox">
+        <h3>Gr8Date</h3>
+        <img src="images/gr8date.png" class="pure-img preview">
+        <div class="description"><p>Gr8Date allows you to plan your entire date night experience in one place.</p></div>
+        <div class="imgbutton"><a href="http://greatdate.herokuapp.com/" target="_blank">launch</a></div>
+      </div>
+
+      <div id="bounce" class="pure-u-1 pure-u-lg-1-2 imgbox">
+        <h3>Bounce</h3>
+        <img src="images/bounce.png" class="pure-img preview">
+        <div class="description"><p>Bounce helps tennis players find new sparring partners and arrange matches.</p></div>
+        <div class="imgbutton"><a href="http://bounce-la.herokuapp.com/" target="_blank">launch</a></div>
+      </div>
+
+      <div id="tictactoe" class="pure-u-1 pure-u-lg-1-2 imgbox">
+        <h3>TicTacToe: Vim vs. Emacs</h3>
+        <img src="images/tictactoe.png" class="pure-img preview">
+        <div class="description"><p>Real-time game of tic-tac-toe, nerd edition. Wage war for your favorite text editor.</p></div> 
+        <div class="imgbutton"><a href="https://kstictactoeapp.firebaseapp.com/" target="_blank">launch</a></div>
+      </div>
+    </div> <!-- projects END --> 
+    <hr id="contactheader">
+
+    <h2>contact me:</h2>
+    <div id="contact" class="pure-g">
+      <div class="pure-u-1-4"><a href="https://www.linkedin.com/in/smithkseniav
+" target="_blank"><img class="pure-img icon" src="images/linkedin_white.png"></a></div>
+      <div class="pure-u-1-4"><a href="https://www.facebook.com/ksenia.smith.75" target="_blank"><img class="pure-img icon" src="images/facebook_white.png"></a></div>
+      <div class="pure-u-1-4"><a href="https://github.com/kb8228" target="_blank"><img class="pure-img icon" src="images/github_white.png"></a></div>
+      <div class="pure-u-1-4"><a href="#openModal"><img class="pure-img icon" src="images/email_white.png"></a></div>
+    </div> <!-- contact END --> 
+  </div><!-- content-box END -->
+
+  <div id="openModal" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <p>Phone: 1 (347) 324-4140
+      <p>Email: smithkseniav@gmail.com</p>
+      <form class="pure-form pure-form-stacked" id="contact-form" action="#" method="POST" enctype="multipart/form-data">
+        <fieldset>
+          <div class="pure-control-group">
+            <label for="name">your name</label>
+            <input class="pure-u-1" id="name" type="text" placeholder="name">
+          </div>
+
+          <div class="pure-control-group">
+            <label for="email">your email</label>
+            <input class="pure-u-1" id="email" type="email" placeholder="email address">
+          </div>
+
+          <div class="pure-control-group">
+            <label for="subject">subject</label>
+            <input class="pure-u-1" id="subject" type="text" placeholder="Hello...">
+          </div>
+
+          <div class="pure-control-group">
+            <label for="message">message</label>
+            <textarea class="pure-u-1" id="message" class="pure-u-1" type="text" placeholder="Drop me a line here..."></textarea>
+          </div>
+
+          <div class="pure-controls">
+            <button type="submit" class="pure-button imgbutton">send</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+<!-- ///////////////////FOOTER//////////////////////// -->
+  <!-- <div id="footer-fixed" class="pure-u-1"> -->
+    
+  <!-- </div> --> <!-- footer-fixed END -->
+
+</div><!-- container END -->
+</body>
+</html>
